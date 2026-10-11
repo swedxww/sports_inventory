@@ -15,6 +15,4 @@ This project is designed to manage sports equipment in a gym.
 - GitHub
 ## Use Case Diagram
 
-The diagram shows the main actions available to the gym employee.
-
-![Use Case Diagram](docs/diagrams/USE CASE 1.png)
+![Use Case Diagram](docs/diagrams/use_case.png)
