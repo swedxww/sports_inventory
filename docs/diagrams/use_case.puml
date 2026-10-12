@@ -1,0 +1,72 @@
+@startuml use_case
+left to right direction
+
+skinparam backgroundColor #111111
+skinparam defaultFontName Arial
+skinparam defaultFontColor #FFFFFF
+skinparam titleFontColor #FFFFFF
+skinparam shadowing false
+skinparam linetype ortho
+skinparam ArrowColor #FFFFFF
+skinparam ActorBorderColor #FFFFFF
+skinparam ActorFontColor #FFFFFF
+skinparam UsecaseBorderColor #FFFFFF
+skinparam UsecaseBackgroundColor #111111
+skinparam UsecaseFontColor #FFFFFF
+skinparam RectangleBorderColor #FFFFFF
+skinparam RectangleBackgroundColor #111111
+
+title Система "Учёт спортивного инвентаря в зале"
+
+actor "Администратор" as Admin
+actor "Спортсмен" as Athlete
+
+rectangle " " {
+  (Зарегистрироваться) as AdminRegister
+  (Добавить\nинвентарь) as AddInventory
+  (Изменить\nданные) as EditData
+  (Войти) as AdminLogin
+  (Удалить\nинвентарь) as DeleteInventory
+  (Выдать инвентарь) as IssueInventory
+  (Принять возврат) as ReturnInventory
+
+  (Забронировать) as Reserve
+  (Просмотреть\nсписок) as ViewList
+  (Найти\nинвентарь) as FindInventory
+  (Войти) as AthleteLogin
+  (Просмотреть свои\nвыдачи) as ViewMyIssues
+  (Зарегистрироваться) as AthleteRegister
+
+  AdminRegister -[hidden]down- AdminLogin
+  AddInventory -[hidden]down- EditData
+  EditData -[hidden]down- DeleteInventory
+  AdminLogin -[hidden]down- ReturnInventory
+  ReturnInventory -[hidden]right- IssueInventory
+  Reserve -[hidden]down- AthleteLogin
+  ViewList -[hidden]right- AthleteLogin
+  FindInventory -[hidden]right- AthleteLogin
+  AthleteLogin -[hidden]down- ViewMyIssues
+  ViewMyIssues -[hidden]right- AthleteRegister
+}
+
+Admin -- AdminRegister
+Admin -- AdminLogin
+
+AdminLogin -- AddInventory
+AdminLogin -- EditData
+AdminLogin -- DeleteInventory
+AdminLogin -- IssueInventory
+AdminLogin -- ReturnInventory
+
+Athlete -- AthleteLogin
+Athlete -- AthleteRegister
+
+AthleteLogin -- Reserve
+AthleteLogin -- ViewList
+AthleteLogin -- FindInventory
+AthleteLogin -- ViewMyIssues
+
+note bottom
+Use Case диаграмма
+end note
+@enduml
