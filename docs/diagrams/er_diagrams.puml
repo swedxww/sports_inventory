@@ -1,0 +1,33 @@
+
+@startuml er_diagrams
+title Sports Inventory Database
+
+entity categories {
+  * id : INTEGER <<PK>>
+  --
+  name : TEXT
+  description : TEXT
+}
+
+entity equipment {
+  * id : INTEGER <<PK>>
+  --
+  name : TEXT
+  quantity : INTEGER
+  condition : TEXT
+  category_id : INTEGER <<FK>>
+}
+
+entity equipment_movements {
+  * id : INTEGER <<PK>>
+  --
+  equipment_id : INTEGER <<FK>>
+  movement_type : TEXT
+  quantity : INTEGER
+  movement_date : TEXT
+}
+
+categories ||--o{ equipment
+equipment ||--o{ equipment_movements
+
+@enduml
