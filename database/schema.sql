@@ -1,4 +1,3 @@
-
 PRAGMA foreign_keys = ON;
 
 CREATE TABLE IF NOT EXISTS categories (
@@ -23,4 +22,10 @@ CREATE TABLE IF NOT EXISTS equipment_movements (
     quantity INTEGER NOT NULL,
     movement_date TEXT NOT NULL,
     FOREIGN KEY (equipment_id) REFERENCES equipment(id)
+);
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    login TEXT NOT NULL UNIQUE,
+    password_hash TEXT NOT NULL,
+    role TEXT NOT NULL DEFAULT 'user'
 );
