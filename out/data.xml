@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<equipment_list>
+  <equipment>
+    <id>1</id>
+    <name>Футбольный мяч</name>
+    <quantity>15</quantity>
+    <condition>Хорошее</condition>
+    <category>
+      <id>1</id>
+      <name>Мячи</name>
+      <description>Спортивные мячи</description>
+    </category>
+  </equipment>
+  <equipment>
+    <id>2</id>
+    <name>Гантели 5 кг</name>
+    <quantity>8</quantity>
+    <condition>Хорошее</condition>
+    <category>
+      <id>2</id>
+      <name>Гантели</name>
+      <description>Силовой инвентарь</description>
+    </category>
+  </equipment>
+  <equipment>
+    <id>3</id>
+    <name>Баскетбольный мяч</name>
+    <quantity>5</quantity>
+    <condition>Хорошее</condition>
+    <category>
+      <id>1</id>
+      <name>Мячи</name>
+      <description>Спортивные мячи</description>
+    </category>
+  </equipment>
+  <equipment>
+    <id>4</id>
+    <name>Футбольный мяч</name>
+    <quantity>10</quantity>
+    <condition>Хорошее</condition>
+    <category>
+      <id>1</id>
+      <name>Мячи</name>
+      <description>Спортивные мячи</description>
+    </category>
+  </equipment>
+  <equipment>
+    <id>5</id>
+    <name>Гантели 5 кг</name>
+    <quantity>8</quantity>
+    <condition>Хорошее</condition>
+    <category>
+      <id>2</id>
+      <name>Гантели</name>
+      <description>Силовой инвентарь</description>
+    </category>
+  </equipment>
+</equipment_list>

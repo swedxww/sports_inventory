@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Футбольный мяч",
+        "quantity": 15,
+        "condition": "Хорошее",
+        "category": {
+            "id": 1,
+            "name": "Мячи",
+            "description": "Спортивные мячи"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Гантели 5 кг",
+        "quantity": 8,
+        "condition": "Хорошее",
+        "category": {
+            "id": 2,
+            "name": "Гантели",
+            "description": "Силовой инвентарь"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Баскетбольный мяч",
+        "quantity": 5,
+        "condition": "Хорошее",
+        "category": {
+            "id": 1,
+            "name": "Мячи",
+            "description": "Спортивные мячи"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Футбольный мяч",
+        "quantity": 10,
+        "condition": "Хорошее",
+        "category": {
+            "id": 1,
+            "name": "Мячи",
+            "description": "Спортивные мячи"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Гантели 5 кг",
+        "quantity": 8,
+        "condition": "Хорошее",
+        "category": {
+            "id": 2,
+            "name": "Гантели",
+            "description": "Силовой инвентарь"
+        }
+    }
+]
